@@ -14,7 +14,7 @@ from utils import *
 sacred.SETTINGS['CONFIG']['READ_ONLY_CONFIG'] = False
 sacred.SETTINGS.CAPTURE_MODE = 'no'
 
-ex = Experiment("UPRE-Net", save_git_info=False)
+ex = Experiment("UPRENet", save_git_info=False)
 ex.captured_out_filter = apply_backspaces_and_linefeeds
 
 ###### Set up source folder ######
@@ -98,3 +98,4 @@ def add_observer(config, command_name, logger):
     observer = FileStorageObserver.create(os.path.join(config['path']['log_dir'], exp_name))
     ex.observers.append(observer)
     return config
+
