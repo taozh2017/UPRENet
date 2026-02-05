@@ -38,8 +38,7 @@ do
   for SUPP_IDX in "${ALL_SUPP[@]}"
   do
     # RELOAD_PATH='please feed the absolute path to the trained weights here' # path to the reloaded model
-    # RELOAD_MODEL_PATH="/opt/data/private/TestNet_weit/exps_on_${DATASET}_setting1_yes/GMRD_train_${DATASET}_cv${EVAL_FOLD}/1/snapshots/30000.pth"
-    RELOAD_MODEL_PATH="/opt/data/private/UPRE-Net/exps_on_${DATASET}_setting1/UPRE-NET_train_${DATASET}_cv${EVAL_FOLD}/1/snapshots/36000.pth"
+    RELOAD_MODEL_PATH="/opt/data/private/UPRENet/exps_on_${DATASET}_setting1/UPRE-NET_train_${DATASET}_cv${EVAL_FOLD}/1/snapshots/36000.pth"
     python3 test.py with \
     mode="test" \
     dataset=$DATASET \
